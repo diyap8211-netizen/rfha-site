@@ -1,36 +1,61 @@
 # Rise For Her Awareness (RFHA)
 
-Rise For Her Awareness (RFHA) is a youth-led initiative focused on raising awareness about women’s safety, respect, and equality.  
-We aim to create space for important conversations, challenge harmful norms, and encourage a more informed and supportive community.
+> **A youth-driven NGO founded by students of Birla Open Minds School, Kollur, Hyderabad.**  
+> We amplify voices, challenge inequality, and create opportunities for women through awareness, compassion, and collective action.
 
 ---
 
-## About Us
-RFHA was founded in Hyderabad with the mission to empower women and communities through awareness campaigns, workshops, and grassroots events.  
-We collaborate with schools, colleges, and local organizations to spark dialogue and inspire change.  
+## 🌍 About Us
+Rise For Her Awareness (RFHA) is a student-led initiative committed to raising awareness about women’s rights, education, and dignity.  
+Through campaigns, events, and grassroots action, we strive to bring lasting change in our communities.
 
-Our values:
-- Respect and equality for all
-- Community-driven empowerment
-- Transparency in fundraising and impact
+All funds raised are directed toward trusted nonprofit organizations such as **SEWA**, **Snehalaya**, and **CARE India**, which work toward women’s empowerment, safety, education, independence, and well-being.
 
 ---
 
-## Community Stats
-- **50+ volunteers** actively engaged in awareness drives  
-- **10+ events** organized across Hyderabad, including bake sales and workshops  
-- **1000+ people** reached through campaigns and social media initiatives  
-- All funds raised are directed to the **She Can Foundation (Hyderabad)**  
+## ✨ What We Stand For
+- **Education** → Knowledge builds confidence, opportunity, and brighter futures.  
+- **Equality** → Every woman deserves fairness, respect, and equal opportunities.  
+- **Empowerment** → When women rise, families and communities rise with them.  
 
 ---
 
-## Get Involved
-We believe change starts with collective action. Here’s how you can join us:
-- **Volunteer**: Help organize events and spread awareness in your community.  
-- **Donate**: Support our fundraising efforts — every contribution goes directly to She Can Foundation.  
-- **Collaborate**: Partner with us to host workshops, talks, or awareness drives.  
+## 📸 Voices of Change
+Students, teachers, didis, bhaiyas, and support staff at Birla Open Minds came together to stand for dignity, equality, and women empowerment.  
+> *“Real change begins when every hand holds the message.”*
 
 ---
+
+## 🚀 Get Involved
+We believe change starts with action. You can support us in two ways:
+
+- **Volunteer Sign-Up** → [Join Us](mailto:riseforherawarenessngo@gmail.com?subject=Volunteer%20Sign-up)  
+- **Donate Now** → [Milaap Fundraiser](https://milaap.org/fundraisers/support-women-in-india)
+
+---
+
+## 🖥️ Website Sections
+- **Hero** → RFHA logo, tagline, and call-to-action buttons  
+- **About Us** → Mission, Birla Open Minds identity, and partner NGOs  
+- **Values** → Education, Equality, Empowerment  
+- **Voices of Change** → Photo grid showcasing students, teachers, and staff  
+- **Impact** → Stats and achievements  
+- **Support** → Poverty photos and donation appeal  
+- **CTA** → Volunteer and donation links  
+- **Footer** → Contact info and closing quote  
+
+---
+
+## 📬 Contact
+- **Email:** riseforherawarenessngo@gmail.com  
+- **Instagram:** [@rfha_birlaopenminds](https://instagram.com/rfha_birlaopenminds)  
+- **Location:** Hyderabad, India  
+
+---
+
+## 📄 License
+This project is licensed under the **MIT License** — feel free to use, adapt, and share responsibly.
+
 
 ## Call to Action
 Join us in spreading awareness and supporting initiatives that make a difference.  
