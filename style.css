@@ -1,0 +1,312 @@
+
+/* =========================
+   GLOBAL STYLES
+   - Base font, spacing, and colors
+========================= */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+section {
+  padding: 60px 20px; /* consistent spacing for all sections */
+}
+
+/* =========================
+   HERO SECTION
+   - Headline fade-in
+   - Button hover pulse
+   - Background overlay
+========================= */
+.hero h1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards; /* fade + slide up */
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero .btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero .btn:hover {
+  transform: scale(1.05); /* gentle pulse */
+  box-shadow: 0 0 12px rgba(255, 100, 150, 0.6); /* glow */
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2));
+  background-attachment: fixed; /* parallax effect */
+}
+
+/* =========================
+   ABOUT US SECTION
+   - Text slide-in
+   - Icon hover spin
+========================= */
+.about p {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideIn 1s ease forwards; /* slide in from left */
+}
+
+@keyframes slideIn {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.about .icon {
+  transition: transform 0.4s ease;
+}
+.about .icon:hover {
+  transform: rotate(15deg); /* playful spin */
+}
+
+/* =========================
+   STATS SECTION
+   - Card hover lift
+========================= */
+.stats .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.stats .card:hover {
+  transform: translateY(-8px); /* lift up */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* shadow depth */
+}
+
+/* =========================
+   IMPACT SECTION
+   - Scroll-triggered reveal
+   - Parallax images
+========================= */
+.impact .card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+.impact .card.visible {
+  opacity: 1;
+  transform: translateY(0); /* reveal on scroll */
+}
+
+.impact-img {
+  background-attachment: fixed; /* parallax background */
+  background-position: center;
+  background-size: cover;
+}
+
+/* =========================
+   SUPPORT SECTION
+   - Donation button glow
+   - Photo hover zoom + caption overlay
+========================= */
+.support .btn {
+  transition: box-shadow 0.4s ease;
+}
+.support .btn:hover {
+  box-shadow: 0 0 20px rgba(255, 80, 120, 0.7); /* glow effect */
+}
+
+.support-img {
+  position: relative;
+  overflow: hidden;
+}
+.support-img img {
+  transition: transform 0.4s ease;
+}
+.support-img:hover img {
+  transform: scale(1.05); /* zoom */
+}
+.support-img::after {
+  content: attr(alt); /* show alt text as caption */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  opacity: 0;
+  padding: 8px;
+  transition: opacity 0.3s ease;
+}
+.support-img:hover::after {
+  opacity: 1; /* fade in caption */
+}
+
+/* =========================
+   GET INVOLVED SECTION
+   - Card flip
+   - Join button bounce
+========================= */
+.get-involved .card {
+  perspective: 1000px; /* enable 3D flip */
+}
+.get-involved .card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.get-involved .card:hover .card-inner {
+  transform: rotateY(180deg); /* flip effect */
+}
+
+.get-involved .btn {
+  animation: bounce 2s infinite; /* continuous bounce */
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* =========================
+   FOOTER
+   - Social icon hover color
+   - Quote fade-in
+========================= */
+.footer .social-icon {
+  transition: color 0.3s ease;
+}
+.footer .social-icon:hover {
+  color: #ff5078; /* highlight color */
+}
+
+.footer .quote {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards; /* fade in on load */
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* =========================
+   VOICES OF CHANGE PHOTO GRID
+   - Masonry layout
+   - Hover zoom + caption
+========================= */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.photo-grid .grid-item img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.photo-grid .grid-item:hover img {
+  transform: scale(1.03); /* zoom */
+}
+
+.photo-grid .grid-item figcaption {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.photo-grid .grid-item:hover figcaption {
+  opacity: 1; /* fade in caption */
+}
+
+/* Masonry modifiers */
+.large-vertical { grid-row: span 2; }
+.medium { grid-row: span 1; }
+.square { grid-row: span 1; }
+.wide { grid-column: span 2; }
+
+.voices-quote {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  color: #333;
+}
+
+/* =========================
+   RESPONSIVE ADJUSTMENTS
+   - Tablet & mobile breakpoints
+========================= */
+@media (max-width: 1024px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 18px;
+  }
+
+  .large-vertical,
+  .wide {
+    grid-column: span 1 !important;
+    grid-row: auto !important; /* collapse layout */
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 16px;
+  }
+
+  .photo-grid .grid-item img {
+    border-radius: 16px; /* smaller radius */
+  }
+
+  .voices-quote {
+    font-size: 1rem;
+    margin-top: 24px;
+  }
+}
+
+/* =========================
+   FADE-IN ANIMATION FOR GRID
+   - Staggered sequence
+========================= */
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.photo-grid .grid-item {
+  opacity: 0;
+  animation: fadeInZoom 0.8s ease forwards;
+}
+
+/* Staggered delays for cascading effect */
+.photo-grid .grid-item:nth-child(1) { animation-delay: 0.1s; }
+.photo-grid .grid-item:nth-child(2) { animation-delay: 0.2s; }
+.photo-grid .grid-item:nth-child(3) { animation-delay: 0.3s; }
+.photo-grid .grid-item:nth-child(4) { animation-delay: 0.4s; }
+.photo-grid .grid-item:nth-child(5) { animation-delay: 0.5s; }
+.photo-grid .grid-item:nth-child(6) { animation-delay: 0.6s; }
+.photo-grid .grid-item:nth-child(7) { animation-delay: 0.7s; }
+.photo-grid .grid-item:nth-child(8) { animation-delay: 0.8s; }
+.photo-grid .grid-item:nth-child(9) { animation-delay: 0.9s; }
+.photo-grid .grid-item:nth-child(10) { animation-delay: 1s; }
+/* Continue pattern for all 19 items */
+
+/* =========================
+   CREDITS BAR
+========================= */
+.credits {
+  background: #f4f4f4;              /* light neutral background */
+  text-align: center;
+}
